@@ -1,0 +1,68 @@
+.image {
+  height: 70vh;
+
+  object-fit: cover;
+}
+.hero {
+  position: relative;
+  height: 100%;
+}
+.headingEvents {
+  position: absolute;
+  color: white;
+  top: 0%;
+  /* transform: translateY(-50%); */
+  left: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  background: rgba(34, 156, 155, 0.82);
+}
+.headingEvents h1 {
+  font-size: 4rem;
+}
+.headingEvents p {
+  /* font-size: 4rem;
+   */
+  color: white;
+  font-size: 13px;
+  margin-top: 10px;
+  /* width: 80%;
+  margin-left: auto;
+  margin-right: auto; */
+}
+.headerDiv {
+  padding: 0 5%;
+}
+
+@media only screen and (max-width: 600px) {
+  .headingEvents {
+    position: absolute;
+    color: white;
+    top: 0%;
+    left: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .headingEvents h1 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+  }
+  .headingEvents p {
+    font-size: 15px;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    /* margin-bottom: 30px; */
+  }
+  .headerDiv {
+    text-align: center;
+  }
+}
+
+/* Project Showcasing */

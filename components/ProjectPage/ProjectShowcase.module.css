@@ -1,0 +1,138 @@
+.containerFluid {
+  width: 100%;
+  color: #252830;
+  /* min-height: 400px;
+  max-height: 450px; */
+  margin: 2.5em auto;
+  /* padding: 20px 0; */
+  
+  /* margin-bottom: 0 !important; */
+}
+@media (max-width: 530px) {
+  .containerFluid {
+    left: 0;
+    margin: 10px 0;
+    position: relative;
+    top: 0;
+    transform: none;
+  }
+  .blogCard{
+    margin-top: 25px !important;
+    box-shadow: 4px 4px 49px -6px rgba(0,0,0,0.22) !important;
+  }
+  .media{
+    height: 350px;
+    /* margin */
+  }
+}
+.blogCard {
+  background-color: white;
+  
+  border-radius: 1px;
+  box-shadow: 4px 4px 49px -6px rgba(0,0,0,0.42);
+
+  min-height: 300px;
+  margin: 0 auto;
+  max-width: 85%;
+  overflow: hidden;
+
+}
+/* @media (max-width: 580px) {
+  .blogCard {
+  
+    overflow: visible;
+  }
+} */
+.media {
+  background-position: center;
+  background-size: cover;
+  /* height: 100px; */
+  max-height: 100%;
+  width: 100%;
+}
+.cardBody {
+  color: black !important;
+  height: 100%;
+  
+  padding: 10px 2em 20px 2em;
+
+}
+.subPara{
+  font-weight: 600;
+}
+
+.cardIcons{
+  opacity: 0.8;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.account{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* min-height:100px ; */
+}
+.icons{
+  color :#042b50;
+  font-size: 30px;
+  margin: 5px 8px ;
+}
+
+@media (max-width: 530px) {
+  .cardBody {
+    background-color: white;
+  }
+}
+.tagline {
+  font-size: 8px;
+  text-transform: uppercase;
+}
+.title {
+  color: #252830;
+  /* font-family: "Playfair Display SC"; */
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.dates {
+  opacity: 0.89;
+  font-weight: 300;
+  margin-top: 18px;
+  letter-spacing: 1px;
+}
+.dates > p {
+  margin: 0;
+}
+
+.divider {
+  background: #7a7a7a;
+  height: 2px;
+  margin: 20px auto;
+  width: 40px;
+}
+.paragraph {
+  font-weight: 400;
+}
+.readMore {
+  bottom: 25px;
+  color: #7a7a7a;
+  cursor: pointer;
+  left: 50%;
+  padding: 5px;
+  position: absolute;
+  text-decoration: none;
+  top: auto;
+  transform: translateX(-50%);
+}
+.readMore:hover,
+.readMore:focus,
+.readMore:visited {
+  color: #252830;
+  text-decoration: none;
+}
+@media (max-width: 530px) {
+  .col-xs-6 {
+    width: 100%;
+  }
+}

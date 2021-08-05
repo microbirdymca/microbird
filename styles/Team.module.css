@@ -1,0 +1,28 @@
+.team {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  min-height: 80vh;
+  padding-bottom: 3em;
+  overflow: hidden;
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.secCardCol {
+  margin: 1em 0;
+}
+.jsec {
+  height: 100%;
+  width: 100%;
+  background-color: #f4f4f4;
+  padding-top: 1.5em;
+  overflow-x: hidden;
+  /* padding: 1em; */
+}

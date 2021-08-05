@@ -1,0 +1,24 @@
+/* HERO START*/
+.hero {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.hero > img{
+  object-fit: cover;
+}
+/* HERO END*/
+.desc{
+  width: 70%;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+@media (max-width:800px) {
+  .desc{
+    width: 95%;
+  }
+}

@@ -1,0 +1,62 @@
+.alumni{
+    min-height: 80vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: /aqua; */
+}
+.carousel{
+    /* min-height: 95%; */
+    width: 90%;
+    min-height: 70vh;
+    margin-bottom: 2rem;
+    
+}
+.slide{
+    background-color: #295782;
+    /* max-height: 75vh; */
+    min-height: 70vh;
+    height: 100%;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+.caption{
+    padding: 0 !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.caption  img{
+    height: 150px;
+    width: 150px;
+    /* position: static; */
+    /* transform: translateY(50%); */
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+.company{
+    color: #9A9696;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.slide h5{
+    opacity: 0.8;
+}
+@media(max-width: 760px) {
+    .slide{
+        min-height: 90vh;
+    }
+    .slide > img{
+        transform: translateY(10%);
+        /* height: 175px;
+        width: 75px; */
+    }
+}

@@ -1,0 +1,99 @@
+.upcoming {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 2px;
+  position: relative;
+  height: 100%;
+}
+.upcoming > img {
+  /* height: 100%; */
+  width: 250px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.upcoming h2 {
+  color: #03396c;
+  /* text-align: center; */
+  font-size: 25px;
+  /* margin-bottom: 15px; */
+}
+
+.organize {
+  font-weight: 600;
+  font-size: 13px;
+  margin-top: -20px;
+  margin-bottom: 15px;
+  
+}
+
+.upcoming p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-top: 5px 0;
+  margin-bottom: 25px;
+}
+.btns {
+  display: flex;
+  /* justify-content: space-between; */
+}
+.btn {
+  margin-right: 20px;
+  /* font-family: Poppins; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  width: 80px;
+  /* height: 30px; */
+  border-radius: 40px;
+  line-height: 24px;
+  font-size: 14px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important; */
+  text-align: center;
+  background-color: #03396c;
+  color: #ffffff;
+  outline: none !important;
+  border: none !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+.btn:focus,
+.btn:hover {
+  outline: none !important;
+  border: none !important;
+  background-color: #03305a;
+}
+
+@media only screen and (max-width: 600px) {
+  .upcoming {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .upcoming img {
+    width: 100%;
+    max-height: 300px;
+    background-size: cover;
+  }
+  .upcoming h2 {
+    margin-top: 15px;
+  }
+  .organize {
+    margin-top: 5px;
+  }
+  .btns {
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,65 @@
+.timeline {
+  min-height: 400px;
+  background-color: #03396C;
+  color: #fff;
+  text-align: center;
+  padding-top: 2em;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding-bottom: 4.5rem;
+}
+.timeline h4 {
+  opacity: 0.8;
+}
+.timeline h2 {
+  font-size: 3rem;
+}
+.slider{
+  margin-top: 50px;
+  min-height: 300px;
+}
+.dots button::before{
+  color: #fff !important;
+}
+
+
+/* Timeline Card */
+
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  /* justify-content: space-around; */
+  padding: 20px 0;
+  margin: 0 15px;
+}
+@media (max-width: 768px) {
+  
+  
+  .title {
+    margin: 15px 0;
+  }
+}
+
+
+.card > p {
+  width: 90%;
+}
+
+.year{
+  width: 100px ;
+  height: 100px;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+  font-weight: 500;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}

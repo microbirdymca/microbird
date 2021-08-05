@@ -1,0 +1,36 @@
+.card{
+  margin-bottom: 20px;
+}
+.hero{
+  height: auto;
+  position: relative;
+}
+
+.particle{
+  height: 80vh;
+  margin-bottom: 10px;
+  background-color: #042b50;
+  /* position: relative; */
+}
+/* .particle::after{
+  content: 'MicroBird';
+  position: absolute;
+  color: white;
+  font-size: 7rem;
+  font-weight: 800;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+} */
+
+.logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -60%);
+  min-height: 25%;
+  max-height: 250px;
+  min-width: 50%;
+  max-width: 80%;
+}

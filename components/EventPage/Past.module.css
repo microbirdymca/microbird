@@ -1,0 +1,235 @@
+.past {
+  margin: 0 10px;
+}
+
+.date {
+  /* opacity: 0.8;
+   */
+  color: #d7d7d7;
+  font-weight: 700;
+  font-size: 15px;
+  margin-left: 30px;
+}
+.viewBtn {
+  background: #03396c;
+  font-size: 14px;
+  /* margin-bottom: 40px !important; */
+  outline: none;
+  border: none;
+}
+.viewBtn:focus {
+  background: #03396c;
+  font-size: 14px;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none;
+}
+.viewBtn:hover {
+  background: #03396c;
+  font-size: 14px;
+  outline: none !important;
+  border: none;
+}
+.card {
+  margin: 0 auto !important;
+  overflow: hidden;
+}
+
+.cardBody {
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 20px;
+}
+.cardImg {
+  transition: all 0.3s ease-in-out;
+  object-fit: contain;
+}
+
+.past:hover .cardBody {
+  transform: scaleY(0);
+  /* display: none; */
+}
+.past:hover .cardImg {
+  /* height: 300px; */
+  transform: scaleY(2) scaleX(1.4);
+  object-position: center top;
+  /* transform: scaleX(1.7); */
+}
+
+.modalHeading {
+  font-weight: 700;
+  font-size: 1.9rem;
+  color: #03396c;
+}
+/* 
+.modal {
+  width: 100%;
+  margin: 0% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.contentClass {
+  width: 800px;
+  max-width: 95vw;
+}
+*/
+
+.dialogClass {
+  max-width: 60%;
+} 
+
+@media only screen and (max-width: 800px) {
+  .dialogClass {
+    max-width: 500px;
+  } 
+}
+
+/* Card CSS */
+
+.property_description h5 {
+  margin: 0px;
+  font-size: 1.4em;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.property_description p {
+  font-size: 12px;
+}
+
+.center {
+  /* height: 100vh; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End Non-Essential  */
+
+.property_card {
+  height: 24em;
+  width: 20em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 16px;
+  overflow: hidden;
+  -webkit-box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+}
+/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+
+/* Top Half of card, image. */
+
+.property_image {
+  height: 12em;
+  width: 100%;
+  padding: 1em 2em;
+  position: Absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Bottom Card Section */
+
+.property_description {
+  background-color: #fafafc;
+  height: 14em;
+  width: 100%;
+  position: absolute;
+  bottom: 0em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-position: center;
+  padding: 0.5em 1em;
+  text-align: center;
+}
+
+/* Social Icons */
+
+.property_social_icons {
+  /* width: 1em;
+  height: 1em; */
+  width: 100%;
+  /* background-color: black; */
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.property_social_icons button{
+  /* flex: 2; */
+  width: 45%;
+  /* padding-right: 30px; */
+}
+.property_social_icons span{
+  /* flex: 2; */
+  width: 60%;
+  text-align: center;
+  padding-right: 25px;
+  padding-left: 25px;
+  position: relative;
+  /* right: 20px; */
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  /* padding-right: 30px; */
+}
+
+/* Property Cards Hover States */
+
+.property_card:hover .property_description {
+  height: 0em;
+  padding: 0px 1em;
+}
+.property_card:hover .property_image {
+  height: 25em;
+}
+.property_card:hover .property_social_icons span{
+  display: none;
+}
+
+.property_card:hover .viewBtn {
+  background-color: #fff;
+  color: black;
+  border-radius: 0 !important;
+}
+
+.property_card:hover .property_social_icons:hover {
+  /* background-color: blue; */
+  cursor: pointer;
+}
+
+.property_image_title {
+  text-align: center;
+  position: Relative;
+  top: 30%;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+  color: white;
+  font-size: 1.2em;
+}
+
+.property_card:hover .property_image_title {
+  opacity: 1;
+}

@@ -1,0 +1,173 @@
+.content {
+  /* min-height: 20vh; */
+  /* padding: 2em 0; */
+  padding-top: 2.5em;
+  padding-bottom: 1px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: ; */
+}
+.image {
+  height: 70vh;
+  background-size: cover;
+}
+.hero {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.headingEvents {
+  position: absolute;
+  color: white;
+  top: 0%;
+  /* transform: translateY(-50%); */
+  left: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.headingEvents h1 {
+  font-size: 4rem;
+}
+.content > p {
+  width: 75%;
+
+  /* min-width: 400px; */
+}
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+  /* width: 90%; */
+}
+.timerContainer {
+  width: 75%;
+
+  /* min-width: 450px; */
+}
+/*Timer Component */
+.timerComponent {
+  text-align: center;
+  /* padding: 0 !important; */
+}
+.timerComponent span {
+  color: #042b50;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.upcoming {
+  padding: 10px 20px 30px 20px;
+  /* min-height: 50vh;/ */
+  width: 100%;
+  padding-top: 30px;
+  position: relative;
+  background-color: rgba(3, 57, 108, 0.7);
+  z-index: 10;
+  background-image: url("../public/images/events/backgound.png");
+}
+.upcoming::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  background-color: #03396c86;
+}
+*.upcoming {
+  z-index: 100;
+}
+
+.upcomingContainer > h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.upcomingComponent {
+  padding: 30px;
+  /* min-height: 400px; */
+}
+
+.past {
+  padding: 10px 20px;
+  min-height: 50vh;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+}
+.pastDiv {
+  margin: 0 auto;
+}
+
+.pastRow {
+  display: flex;
+}
+.pastContainer h2 {
+  text-align: center;
+  /* margin-top: 15px; */
+  font-weight: 700;
+  font-size: 2.59rem;
+  color: #03396c;
+}
+
+/* SCREEN MEDIA QUERIES */
+@media only screen and (max-width: 600px) {
+  .content > p,
+  .timerComponent {
+    padding-top: 2rem;
+  }
+  .headingEvents {
+    position: absolute;
+    color: white;
+    top: 0%;
+    /* transform: translateY(-50%); */
+    left: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .headingEvents h1 {
+    font-size: 4rem;
+  }
+  .timerComponent span {
+    color: aqua;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  .timerComponent p {
+    font-size: 12px;
+  }
+  .content > p {
+    width: 75%;
+
+    max-width: 450px;
+  }
+  .timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    width: 90%;
+  }
+  .timerContainer {
+    width: 75%;
+
+    max-width: 450px;
+  }
+}

@@ -1,0 +1,107 @@
+.professor{
+  min-height: 80vh;
+  background-color: #03396C;
+  padding: 30px;
+}
+.row{
+  min-height: 80vh;
+  /* display: flex;
+  align-items: stretch; */
+}
+.firstCol{
+  background-color: white;
+  border-radius: 10px;
+  height: 100%;
+  padding: 10px;
+  width: 70%;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.firstCol img{
+  border-radius: 15px;
+  height:340px;
+  object-fit: cover;
+  max-width: 80%;
+  margin: 10px auto 20px auto;
+}
+.dinesh{
+  text-align: center;
+}
+.dinesh h3{
+  font-weight: 800;
+  font-size: 2rem;
+}
+.dinesh h5{
+  opacity: 0.7;
+}
+.dinesh p{
+  font-size: 16px;
+  padding: 0 10px;
+  margin-top: 20px;
+}
+
+.horizontal{
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 70%;
+  /* max-width: 95%; */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.horizontal img{
+  border-radius: 15px;
+  max-height:250px;
+  max-width: 85%;
+  width: 300px;
+  object-fit: cover;
+  /* margin: 10px auto 20px auto; */
+  object-position: top;
+  margin-right: 20px;
+}
+.teacher h3{
+  font-weight: 800;
+  font-size: 2rem;
+}
+.teacher h5{
+  opacity: 0.7;
+}
+.teacher p{
+
+  margin-top: 20px;
+}
+
+@media (max-width:800px){
+  .firstCol{
+    
+    padding: 10px;
+    width: 100%;
+    max-width: 95%;
+    margin-bottom: 10px;
+    
+  }
+  .horizontal{
+    flex-direction: column;
+    width: 100%;
+  }
+  .horizontal img{
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .teacher{
+    text-align: center;
+  }
+}
