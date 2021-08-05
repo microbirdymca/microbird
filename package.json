@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "static": "next build && next export",
     "dev": "next dev",
     "export": "next export",
     "build": "next build",
@@ -22,6 +23,7 @@
     "react-parallax": "^3.3.0",
     "react-particles-js": "^3.5.3",
     "react-slick": "^0.28.1",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "tsparticles": "^1.33.2"
   }
 }

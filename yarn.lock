@@ -2012,7 +2012,7 @@
   "resolved" "https://registry.npmjs.org/ts-pnp/-/ts-pnp-1.2.0.tgz"
   "version" "1.2.0"
 
-"tsparticles@^1.30.0":
+"tsparticles@^1.30.0", "tsparticles@^1.33.2":
   "integrity" "sha512-/oLQWdwyaz9GXTl9j/xckdcIerVlbSlGVd6jT8h8QKPkkkMaqcLlVtVBMLF3542FaH2RUevceTIS7O2JncVdUA=="
   "resolved" "https://registry.npmjs.org/tsparticles/-/tsparticles-1.33.2.tgz"
   "version" "1.33.2"
