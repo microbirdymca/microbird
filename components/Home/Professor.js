@@ -7,7 +7,7 @@ function Professor() {
     
     <Container fluid className={styles.professor}>
       <Row className={styles.row}>
-        <Col md={6}>
+        <Col md={6} className={`px-0`}>
           <div className={styles.firstCol}>
           <img src="images/home/dineshkumar.jpg" />
           <div className={styles.dinesh}>
@@ -19,10 +19,10 @@ function Professor() {
           </div>
           </div>
         </Col>
-        <Col md={6}>
+        <Col md={6} className="px-0">
           <Container fluid>
             <Row>
-              <Col xs={12} style={{textAlign:'left'}}>
+              <Col xs={12} className={`px-0`} style={{textAlign:'left'}}>
               <div className={styles.horizontal}>
                 <img src="images/home/mukeshkumar.jpeg" />
                 <div className={styles.teacher}>
@@ -32,7 +32,7 @@ function Professor() {
                 </div>
               </div>
               </Col>
-              <Col xs={12}>
+              <Col xs={12} className={`px-0`}>
               <div className={styles.horizontal}>
                 <img src="images/home/paulami.jpeg" />
                 <div className={styles.teacher}>

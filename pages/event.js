@@ -27,7 +27,7 @@ const event = (props) => {
                 }
             });
             setData(d);
-            console.log(d , "fk0" , u);
+            // console.log(d , "fk0" , u);
             setUpcoming(u);
         }
         

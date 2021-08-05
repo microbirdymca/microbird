@@ -113,6 +113,8 @@
 }
 .paragraph {
   font-weight: 400;
+  padding-left: 0;
+  padding-right: 0;
 }
 .readMore {
   bottom: 25px;

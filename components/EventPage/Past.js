@@ -46,12 +46,12 @@ const Past = (data) => {
                     <div className={styles.property_description}>
                     <h5> {name} </h5>
                     <p>{short}</p>
+                    <div className={styles.property_social_icons}>
+                        <Button className={styles.viewBtn} variant="primary" onClick={handleShow}>View More </Button>
+                        <span>{date}</span>
+                    </div>
                     </div>
                     
-                    <div className={styles.property_social_icons}>
-                    <Button className={styles.viewBtn} variant="primary" onClick={handleShow}>View More </Button>
-                    <span>{date}</span>
-                    </div>
                     
                 </div>
                 </div>

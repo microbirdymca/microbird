@@ -28,7 +28,7 @@ function Alumni(props) {
         
         return (
           <Carousel.Item className={styles.slide} key={idx}>
-            <Carousel.Caption className={styles.caption}>
+            <div className={styles.caption}>
             <img
               src={`https://drive.google.com/uc?export=view&id=${id}`}
               alt="First slide"
@@ -39,7 +39,7 @@ function Alumni(props) {
               <p>
                 {data.journey}
                 </p>
-            </Carousel.Caption>
+            </div>
           </Carousel.Item>
         )
       })}

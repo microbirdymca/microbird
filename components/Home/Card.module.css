@@ -85,7 +85,7 @@ a.card {
   margin : 10px 5px;
   text-align: center;
   width: 100%;
-  /* padding: 20px 0; */
+  padding: 5px 0;
   overflow: none;
   min-height: 300px;
 }
@@ -97,6 +97,12 @@ a.card {
   height: 100%;
   overflow: hidden;
 
+}
+.row_col{
+  /* style={{width:'90%'}}
+   
+  */
+  width: 90%;
 }
 .card_col p {
   width: 60%;
@@ -150,6 +156,9 @@ a.card {
 }
 
 @media (max-width: 768px) {
+  .row_col{
+    width: 98%;
+  }
   .card_col p {
     width: 95%;
   }

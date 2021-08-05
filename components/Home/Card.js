@@ -5,7 +5,7 @@ function Card() {
   return (
     
       <Container fluid className="px-5" className={styles.card}>
-          <Row style={{width:'90%'}} className="mx-auto">
+          <Row  className={`mx-auto row_col`}>
 
           <Col md={12} className={styles.card_col}>
             <Container fluid className={styles.cont}>

@@ -29,8 +29,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50% , -60%);
-  min-height: 25%;
-  max-height: 250px;
+  /* min-height: 25%;*/
+  max-height: 250px; 
+  height: auto;
   min-width: 50%;
   max-width: 80%;
 }

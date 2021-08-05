@@ -29,7 +29,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #fff;
+
     align-items: center;
+}
+.caption p{
+    width: 85%;
 }
 .caption  img{
     height: 150px;
@@ -37,10 +42,12 @@
     /* position: static; */
     /* transform: translateY(50%); */
     margin-bottom: 2rem;
+    margin-top: 20px;
     border-radius: 50%;
     object-fit: cover;
     object-position: top;
 }
+
 .company{
     color: #9A9696;
     font-size: 16px;

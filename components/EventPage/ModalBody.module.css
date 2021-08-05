@@ -20,3 +20,14 @@
   font-size: 20px;
   color: #03396c;
 }
+
+@media (max-width : 960px){
+  .modalComponent h3 {
+    /* font-size: 11px; */
+    margin-top: 30px ;
+  }
+  .modalComponent p {
+    margin-top: 1em;
+    text-align: center;
+  }
+}

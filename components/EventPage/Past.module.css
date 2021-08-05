@@ -74,6 +74,9 @@
   max-width: 95vw;
 }
 */
+.modal{
+  padding-left: 0 !important;
+}
 
 .dialogClass {
   max-width: 60%;
@@ -86,6 +89,8 @@
 }
 
 /* Card CSS */
+
+
 
 .property_description h5 {
   margin: 0px;
@@ -109,7 +114,7 @@
 /* End Non-Essential  */
 
 .property_card {
-  height: 24em;
+  min-height: 24em;
   width: 20em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,9 +155,13 @@
 
 .property_description {
   background-color: #fafafc;
-  height: 14em;
+  min-height: 14em;
   width: 100%;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   bottom: 0em;
   -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -169,15 +178,16 @@
   height: 1em; */
   width: 100%;
   /* background-color: black; */
-  position: absolute;
-  bottom: 1em;
-  left: 1em;
+  /* position: absolute; */
+  
   display: flex;
   align-items: center;
   /* justify-content: space-around; */
+  /* z-index: 100; */
   -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  /* margin-bottom: 10px; */
 }
 .property_social_icons button{
   /* flex: 2; */
@@ -204,6 +214,12 @@
 }
 .property_card:hover .property_image {
   height: 25em;
+  z-index: 10;
+}
+.property_card:hover .property_social_icons{
+  display: absolute;
+  bottom: 1em;
+  left: 1em;
 }
 .property_card:hover .property_social_icons span{
   display: none;
@@ -213,6 +229,7 @@
   background-color: #fff;
   color: black;
   border-radius: 0 !important;
+  z-index: 11;
 }
 
 .property_card:hover .property_social_icons:hover {

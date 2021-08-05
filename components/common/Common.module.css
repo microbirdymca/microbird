@@ -11,6 +11,8 @@
   object-fit: cover;
 }
 /* HERO END*/
+
+
 .desc{
   width: 70%;
   font-size: 22px;
@@ -20,5 +22,12 @@
 @media (max-width:800px) {
   .desc{
     width: 95%;
+  }
+  .content h1{
+    font-size: 4rem;
+  }
+  .content p{
+    font-weight: 400;
+    font-size: 20px;
   }
 }

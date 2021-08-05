@@ -113,6 +113,7 @@ body {
 }
 .footer-home .content .link-boxes .box {
   width: calc(100% / 5 - 10px);
+  max-width: 100%;
 }
 .footer-home .content .link-boxes .box .link_name {
   color: #fff;
@@ -140,6 +141,7 @@ body {
   font-weight: 400;
   text-decoration: none;
   opacity: 0.8;
+  max-width: 100%;
   transition: all 0.4s ease;
 }
 .footer-home .content .link-boxes .box li a:hover {
@@ -230,6 +232,8 @@ body {
   }
   .footer-home .content .link-boxes .box {
     width: calc(100% / 3 - 10px);
+    max-width: 100%;
+    word-wrap: break-word;
   }
   .footer-home .content .link-boxes .input-box {
     width: 60%;
@@ -251,6 +255,7 @@ body {
   }
   .footer-home .content .link-boxes .box {
     width: calc(100% / 2 - 10px);
+    
   }
   .footer-home .content .link-boxes .input-box {
     width: 100%;

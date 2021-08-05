@@ -34,7 +34,7 @@ const ProjectShowcase = ({dir, data}) => {
                 <p className={styles.subPara}>
                 <AiOutlineStar style={{marginRight:'10px' , fontSize:'20px'}} />{data.star}
                 </p>
-                <p className={`${styles.paragraph} text-justify px-2`}>
+                <p className={`${styles.paragraph} text-justify `}>
                     {data.description}
                 </p>
             </div>
