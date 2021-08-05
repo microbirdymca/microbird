@@ -52,7 +52,7 @@ const project = (props) => {
 }
 
 export async function getStaticProps(context) {
-    const res = await fetch(`${process.env.URL}projects`)
+    const res = await fetch(`https://microbirdymca.herokuapp.com/projects`)
     const data = await res.json()
 
     if (!data) {

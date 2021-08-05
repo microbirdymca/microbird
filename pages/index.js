@@ -139,7 +139,7 @@ export default function Home(props) {
 }
 
 export async function getStaticProps(context) {
-  const res = await fetch(`${process.env.URL}alumni`)
+  const res = await fetch(`https://microbirdymca.herokuapp.com/alumni`)
   const data = await res.json()
 
   if (!data) {
