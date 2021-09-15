@@ -11,7 +11,7 @@ function Professor() {
             <img src="images/home/dineshkumar.jpg" />
             <div className={styles.dinesh}>
               <h3>Proff. Dinesh Kumar</h3>
-              <h5>Vice chancillor, JCBUST</h5>
+              <h5>Vice Chancellor, JCBUST</h5>
               <p>
                 The recipient of prestigious Homi J. Bhabha Memorial Award of Indian Science Congress, Prof. Dinesh Kumar is the fifth Vice Chancellor of J.C. Bose University of Science and Technology, YMCA, Faridabad. An able administrator and ardent researcher, our VC sir has always taught us to aim for the stars and has always backed up in all the works we do.
                 </p>
@@ -30,7 +30,7 @@ function Professor() {
             {/* <img src="images/home/paulami.jpeg" /> */}
             <div className={styles.teacher}>
               <h3>Dr. Anuradha Pilai</h3>
-              <h5>Depty dean student welfare</h5>
+              <h5>Depty Dean Student welfare</h5>
               
             </div>
           </div>
