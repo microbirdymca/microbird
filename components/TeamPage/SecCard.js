@@ -41,7 +41,7 @@ const SecCard = ({photo , tagline , name , insta , facebook , linkedin}) => {
                             
                         </ul>
                     </div>
-                    <Image src={`https://drive.google.com/uc?export=view&id=${id}`} alt="images" layout="fill" />
+                    <img src={`https://drive.google.com/uc?export=view&id=${id}`} alt="images" />
                 </div>
                 <div className={styles.details}>
                     <h2>{name}<br /><span>{tagline}</span></h2>

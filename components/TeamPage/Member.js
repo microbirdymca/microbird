@@ -27,7 +27,7 @@ const JSecCard = ({photo , name , tagline, year , linkedin , facebook , insta}) 
             <div className={styles.card}>
                 
                 <div className={styles.card_image}>
-                    <Image src={`https://drive.google.com/uc?export=view&id=${id}`} alt="images" layout="fill" />
+                    <img src={`https://drive.google.com/uc?export=view&id=${id}`} alt="images"  />
                 </div>
 
             <ul className={styles.social_icons}>
