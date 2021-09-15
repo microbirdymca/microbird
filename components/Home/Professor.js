@@ -29,7 +29,7 @@ function Professor() {
           <div className={styles.horizontal}>
             {/* <img src="images/home/paulami.jpeg" /> */}
             <div className={styles.teacher}>
-              <h3>Dr. Anuradha Pilai</h3>
+              <h3>Dr. Anuradha Pillai</h3>
               <h5>Depty Dean Student welfare</h5>
               
             </div>
