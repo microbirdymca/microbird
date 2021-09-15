@@ -24,7 +24,7 @@ function Footer() {
       
       let data = {email}
       e.target.disable = true;
-      fetch("http://localhost:3000/api/subscribe",{
+      fetch(`${process.env.DB_URL}api/subscribe`,{
         method:"POST",
         headers: {
           'Content-Type': 'application/json'
@@ -58,7 +58,7 @@ function Footer() {
     let data = {id}
     e.target.disable = true;
 
-      fetch("http://localhost:3000/api/unsubscribe",{
+      fetch(`${process.env.DB_URL}api/unsubscribe`,{
         method:"DELETE",
         headers: {
           'Content-Type': 'application/json'

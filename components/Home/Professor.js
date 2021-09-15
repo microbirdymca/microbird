@@ -30,7 +30,7 @@ function Professor() {
             {/* <img src="images/home/paulami.jpeg" /> */}
             <div className={styles.teacher}>
               <h3>Dr. Anuradha Pilai</h3>
-              <h5>Dean Student Welfare</h5>
+              <h5>Depty dean student welfare</h5>
               
             </div>
           </div>
