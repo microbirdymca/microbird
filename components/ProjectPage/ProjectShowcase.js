@@ -20,7 +20,7 @@ const ProjectShowcase = ({dir, data}) => {
            {dir === "left" &&  <div className={`${styles.media} col-sm-5 `} 
         //    style={{backgroundImage: `url("https://drive.google.com/uc?export=view&id=${id}")`}}
            >
-               <Image layout="fill" src={`https://drive.google.com/uc?export=view&id=${id}`} />
+               <img src={`https://drive.google.com/uc?export=view&id=${id}`} />
                </div>}
             <div className={`${styles.cardBody} col-sm-7 col-xs-7`}>
             {/* <p className={`${styles.tagline} text-center`}>Featured</p> */}
