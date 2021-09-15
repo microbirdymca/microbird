@@ -7,12 +7,38 @@
     flex-direction: column;
     /* background-color: /aqua; */
 }
+
+.alumni h1{
+    font-weight: 800;
+}
 .carousel{
     /* min-height: 95%; */
     width: 90%;
     min-height: 70vh;
     margin-bottom: 2rem;
+    text-align: center;
     
+}
+
+.carousel_control_next_icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: 50%/100% 100% no-repeat;
+    /* padding: 15px; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* border: 2px solid white; */
+}
+.control{
+    border-radius: 50%;
+    color: #fff !important;
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 10px;
 }
 .slide{
     background-color: #295782;
@@ -21,6 +47,8 @@
     height: 100%;
     border-radius: 20px;
     padding: 20px;
+    /* width: 75%; */
+    /* margin: 0 auto; */
 
 }
 .caption{
@@ -34,7 +62,7 @@
     align-items: center;
 }
 .caption p{
-    width: 85%;
+    width: 70%;
 }
 .caption  img{
     height: 150px;
@@ -60,10 +88,19 @@
 @media(max-width: 760px) {
     .slide{
         min-height: 90vh;
+        width: 100%;
     }
     .slide > img{
         transform: translateY(10%);
         /* height: 175px;
         width: 75px; */
+    }
+    .caption p{
+        width: 80%;
+    }
+    .carousel_control_next_icon {
+        height: 30px;
+        width: 30px;
+
     }
 }

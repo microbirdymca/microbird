@@ -1,16 +1,11 @@
-.card_wrapper {
-  width: 100%;
-  height: 500px;
-  position: relative;
-}
+
 
 .card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
+
   width: 100%;
-  height: 450px;
-  transform: translate(-50%, -50%);
+  height: 310px;
+  /* transform: translate(-50%, -50%); */
   border-radius: 16px;
   overflow: hidden;
   border: none;
@@ -171,8 +166,18 @@
 }
 
 @media (max-width: 700px) {
+  .card{
+    height: 250px;
+  }
   .card_wrapper {
     margin-left: auto !important ;
     margin-right: auto !important ;
   }
+  .social_icons li a {
+
+    width: 25px;
+    height: 25px;
+    
+  }
+
 }

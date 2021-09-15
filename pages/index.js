@@ -11,11 +11,8 @@ import Particles from 'react-particles-js';
 export default function Home(props) {
   
   return (
-    <Layout title="Home | MicroBird">
-      {/* <Hero img="/images/events/project-hero.png" 
-        title="Home"
-        desc="Lorem Ipsum is simply dummy text of the printing and  Lor    and typesetting industry. Lorem Ipsum has Lorem Ipsum   and simply dummy . Lorem Ipsum has Lorem Ipsum is Lorem Ipsum is simply dummy text of the printing and  Lor    and typesetting indust . Lorem Ipsum has Lorem Ipsum is " 
-      /> */}
+    <Layout title="Home | MicroBird" without={true}>
+      
        <div className={styles.hero}>
        <Particles
     params={{

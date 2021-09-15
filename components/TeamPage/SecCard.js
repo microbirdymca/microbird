@@ -2,6 +2,8 @@ import React from 'react'
 import styles from './SecCard.module.css'
 import { FaInstagram , FaFacebook  } from "react-icons/fa";
 import { SiLinkedin } from "react-icons/si";
+import Image from 'next/image'
+
 
 const SecCard = ({photo , tagline , name , insta , facebook , linkedin}) => {
     let id = String(photo);
@@ -39,7 +41,7 @@ const SecCard = ({photo , tagline , name , insta , facebook , linkedin}) => {
                             
                         </ul>
                     </div>
-                    <img src={`https://drive.google.com/uc?export=view&id=${id}`} alt="images" />
+                    <Image src={`https://drive.google.com/uc?export=view&id=${id}`} alt="images" layout="fill" />
                 </div>
                 <div className={styles.details}>
                     <h2>{name}<br /><span>{tagline}</span></h2>

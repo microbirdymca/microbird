@@ -1,6 +1,8 @@
 import React , {useState , useEffect} from "react";
 import styles from "./Alumni.module.css";
 import { Carousel } from "react-bootstrap";
+import { GrLinkNext , GrLinkPrevious } from "react-icons/gr";
+
 
 function Alumni(props) {
   const [index, setIndex] = React.useState(0);
@@ -22,7 +24,19 @@ function Alumni(props) {
     <div className={styles.alumni}>
       <h1 className="py-3">Our Alumni</h1>
 
-    <Carousel className={styles.carousel} activeIndex={index} onSelect={handleSelect}>
+    <Carousel className={styles.carousel} activeIndex={index} onSelect={handleSelect}
+      nextIcon={<span aria-hidden="true" className={styles.carousel_control_next_icon} >
+        <GrLinkNext className={styles.control} />
+
+      </span>	
+    }
+      prevIcon={<span aria-hidden="true" className={styles.carousel_control_next_icon} >
+        <GrLinkPrevious className={styles.control} />
+
+      </span>	
+    }
+    // fade={true}
+    >
       {data.map((data , idx) => {
         let id = String(data.picture).split("=")[1];
         

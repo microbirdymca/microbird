@@ -208,6 +208,25 @@ body {
 .bottom-details .bottom_text a {
   margin-right: 10px;
 }
+
+.hide {
+  top: -103px;
+}
+
+.ymca{
+  text-align: center;
+  color: #fff;
+}
+
+.ymca img{
+  height: 100px;
+  width: auto;
+}
+.ymca h3{
+  font-size: 18px;
+  margin-top: 15px;
+}
+
 @media (max-width: 900px) {
   .footer-home .content .link-boxes {
     flex-wrap: wrap;
@@ -260,4 +279,15 @@ body {
   .footer-home .content .link-boxes .input-box {
     width: 100%;
   }
+}
+
+.disable{
+  /* cursor:auto !important; */
+  opacity: 0.8 !important;
+  background: #f44336 !important;
+  color: #fff !important;
+
+}
+.disable:hover{
+  opacity: 0.8 !important;
 }

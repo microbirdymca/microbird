@@ -71,7 +71,7 @@ const event = (props) => {
                 <div className={styles.upcoming}>
                     <Container className={styles.upcomingContainer} fluid>
                         <h2>Upcoming Events</h2>
-                        <Row className="d-flex justify-center">
+                        <Row className="d-flex justify-content-center">
                             {upcoming.map((el,idx) => {
                                 return (
                                     <Col className={styles.upcomingComponent} md={6}>
@@ -128,7 +128,7 @@ const event = (props) => {
 }
 
 export async function getStaticProps(context) {
-    const res = await fetch(`https://microbirdymca.herokuapp.com/events`)
+    const res = await fetch(`${process.env.URL}events`)
     const data = await res.json()
 
     if (!data) {

@@ -4,6 +4,7 @@ import { FaInstagram , FaFacebook  } from "react-icons/fa";
 import { SiLinkedin } from "react-icons/si";
 import { TiLocation } from "react-icons/ti";
 import { AiFillCalendar ,AiOutlineStar } from "react-icons/ai";
+import Image from 'next/image'
 
 const ProjectShowcase = ({dir, data}) => {
     let {poster} = data;
@@ -16,7 +17,11 @@ const ProjectShowcase = ({dir, data}) => {
            
         <div className={`${styles.containerFluid}`}>
         <div className={`${styles.blogCard} row`}>
-           {dir === "left" &&  <div className={`${styles.media} col-sm-5 `} style={{backgroundImage: `url("https://drive.google.com/uc?export=view&id=${id}")`}}></div>}
+           {dir === "left" &&  <div className={`${styles.media} col-sm-5 `} 
+        //    style={{backgroundImage: `url("https://drive.google.com/uc?export=view&id=${id}")`}}
+           >
+               <Image layout="fill" src={`https://drive.google.com/uc?export=view&id=${id}`} />
+               </div>}
             <div className={`${styles.cardBody} col-sm-7 col-xs-7`}>
             {/* <p className={`${styles.tagline} text-center`}>Featured</p> */}
             <h3 className={`${styles.title} text-center mt-3`}>{data.name}</h3>

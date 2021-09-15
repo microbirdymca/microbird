@@ -1,9 +1,93 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
 import { FaInstagram , FaFacebook , FaYoutube,FaTwitter } from "react-icons/fa";
 import { SiLinkedin } from "react-icons/si";
 import Link from 'next/link'
 
 function Footer() {
+  const [email , setEmail] = useState("");
+  const [id , setId] = useState("");
+  const [disable , setDisable] = useState(false);
+
+  useEffect(()=>{
+    const localEmail = localStorage.getItem("email");
+    const localId = localStorage.getItem("id");
+    if(localEmail){
+      setDisable(true);
+      setId(localId)
+      setEmail("Thanks for Subscribing");
+
+    }
+  } , [])
+  
+  function handleSubmit(e){
+    if(email){
+      
+      let data = {email}
+      e.target.disable = true;
+      fetch("http://localhost:3000/api/subscribe",{
+        method:"POST",
+        headers: {
+          'Content-Type': 'application/json'
+          // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body:JSON.stringify(data),
+      }).then(Response => Response.json()
+      ).then(data => {
+        // console.log(data, "najs")
+        e.target.disable = false;
+        if(data.error){
+          throw new Error(data.error)
+        }
+        localStorage.setItem("email" , email);
+        localStorage.setItem("id", data.msg.id)
+        setId(data.msg.id)
+        setDisable(true)
+        setEmail("Thanks for Subscribing");
+        
+      })
+      .catch(error => {
+        // console.log(error)
+        alert("Please Try Again")
+      })
+    }
+
+  }
+  function unSubscribe(e){
+
+
+    let data = {id}
+    e.target.disable = true;
+
+      fetch("http://localhost:3000/api/unsubscribe",{
+        method:"DELETE",
+        headers: {
+          'Content-Type': 'application/json'
+          // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body:JSON.stringify(data),
+      }).then(Response => Response.json()
+      ).then(data => {
+        // console.log(data, "najs")
+        e.target.disable = false;
+
+        if(data.error){
+          throw new Error(data.error)
+        }
+        localStorage.removeItem("email");
+        localStorage.removeItem("id")
+        setDisable(false)
+        setEmail("");
+        setId("");
+        
+      })
+      .catch(error => {
+        // console.log(error)
+        alert("Please Try Again")
+      })
+
+  }
+
+
   return (
     <div className="footer-home">
       <div className="content">
@@ -46,30 +130,61 @@ function Footer() {
             <li>
               <Link href="/event">Event</Link>
             </li>
+            {/* <li>
+              <Link href="/gallery">Gallery</Link>
+            </li> */}
           </ul>
-          <ul className="box">
-            <li className="link_name">Contact Us</li>
-            <li>
-              <a href="#">Mail Id: microbirdymca@gmail.com</a>
-            </li>
+          <div className={`box ymca`}>
+            <img src="images/ymca.png" />
+
             
+            <h3>
+            J.C Bose University of Science 
+            and Technology, YMCA
+            </h3>
             
-          </ul>
+          </div>
           
           
-          <form action="microbirdymca@gmail.com" method="post" className="box input-box" enctype="text/plain">
-            <li className="link_name">Mail Us</li>
+          <div  method="post" className="box input-box" enctype="text/plain">
+            <li className="link_name">Newsletter</li>
+            {disable ? 
+            <>
+              <li>
+                <input type="email" placeholder="Enter your email" value={email} disabled/>
+              </li>
+              <li>
+                <input type="submit" value="UnSubscribe" onClick={unSubscribe} className={"disable"} />
+              </li>
+            </>
+            
+            :          
+            <>
+              <li>
+                <input type="email" placeholder="Enter your email" onChange={(e) => setEmail(e.target.value)} value={email} />
+              </li>
+              <li>
+              <input type="submit" onClick={handleSubmit} value="Subscribe"  /> 
+              </li>
+            </>
+             }
+
+<li className="link_name">Contact Us</li>
             <li>
-              <input type="email" placeholder="Enter your email" />
+            <a href="mailto:microbirdymca@gmail.com?
+              
+              &body=How can we help you today ?">
+                Mail Id: microbirdymca@gmail.com
+            </a>
+              {/* <a href="#">Mail Id: microbirdymca@gmail.com</a> */}
             </li>
-            <li>
-              <input type="submit" value="Subscribe" />
-            </li>
-          </form>
+            
+          
+          </div>
         </div>
       </div>
       <div className="bottom-details">
-        <div className="bottom_text text-center">
+        <div className="bottom_text text-center d-flex justify-content-center">
           <span className="copyright_text">
             Copyright © 2021 <a href="#">MicroBird</a>All rights reserved
           </span>

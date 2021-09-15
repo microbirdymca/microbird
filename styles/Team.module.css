@@ -16,7 +16,14 @@
   height: auto;
 }
 .secCardCol {
-  margin: 1em 0;
+  margin: 1rem 0;
+  /* height: 300px; */
+  /* min-height: 400px; */
+}
+.memCardCol {
+  margin: 1rem 0;
+  /* height: 300px; */
+  /* min-height: 400px; */
 }
 .jsec {
   height: 100%;
@@ -25,4 +32,20 @@
   padding-top: 1.5em;
   overflow-x: hidden;
   /* padding: 1em; */
+}
+
+.scroller{
+  border-radius: 50%;
+  background-color: #00000090;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  z-index: 10000;
+}
+
+
+@media screen and (max-width: 600px) {
+  .memCardCol{
+    width: 50% !important;
+  }
 }

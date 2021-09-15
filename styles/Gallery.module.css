@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+.main{
+    margin-bottom: 40px;
+}
+.main h1 {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: "Pacifico", "cursive";
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .main .gallery {
+    padding: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 10px;
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 300px;
+    grid-auto-flow: dense;
+    /* Controls how the auto-placement algorithm works, specifying exactly how auto-placed items get flowed into the grid. */
+  }
+  
+  .main .img-div, .main .big-stretch, .main .v-stretch, .main .h-stretch {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .main .img-div .after, .main .big-stretch .after, .main .v-stretch .after, .main .h-stretch .after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #EDEDED;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    min-height: 30%;
+    font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    background-color: rgba(23, 23, 23, 0.5);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(1, 0.6, 0.77, 1.01);
+    transition: -webkit-transform 0.4s cubic-bezier(1, 0.6, 0.77, 1.01);
+    transition: transform 0.4s cubic-bezier(1, 0.6, 0.77, 1.01);
+    transition: transform 0.4s cubic-bezier(1, 0.6, 0.77, 1.01), -webkit-transform 0.4s cubic-bezier(1, 0.6, 0.77, 1.01);
+  }
+  
+  .main .img-div .after button, .main .big-stretch .after button, .main .v-stretch .after button, .main .h-stretch .after button {
+    cursor: pointer;
+    font-family: "alliance", mono, sans-serif;
+    position: relative;
+    z-index: 1;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-transform: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 4px 18px;
+    margin-top: 10px;
+    height: 46px;
+    border-radius: 0;
+    overflow: hidden;
+    background: transparent;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    -webkit-font-feature-settings: 'salt' on, 'ss01' on, 'ss02' on;
+            font-feature-settings: 'salt' on, 'ss01' on, 'ss02' on;
+    color: #fff;
+    border: 2px solid #FF7571;
+  }
+  
+  .main .img-div .after button:hover, .main .big-stretch .after button:hover, .main .v-stretch .after button:hover, .main .h-stretch .after button:hover {
+    background: linear-gradient(269.16deg, #FFE580 -15.83%, #FF7571 -4.97%, #FF7270 15.69%, #EA5DAD 32.43%, #C2A0FD 50.09%, #9867F0 67.47%, #3BF0E4 84.13%, #33CE43 105.13%, #B2F4B6 123.24%);
+    background-position: 58% 50%;
+    background-size: 500%;
+    color: black;
+  }
+  
+  .main .img-div .after p, .main .big-stretch .after p, .main .v-stretch .after p, .main .h-stretch .after p {
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 90%;
+  }
+  
+  .main .img-div:hover .after, .main .big-stretch:hover .after, .main .v-stretch:hover .after, .main .h-stretch:hover .after {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  
+  .main .v-stretch {
+    grid-row: span 2;
+  }
+  
+  .main .h-stretch {
+    grid-column: span 2;
+  }
+  
+  .main .big-stretch {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
+  .main .gallery .slides {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .main .gallery div img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  @media screen and (max-width: 515px) {
+    .main .v-stretch {
+      grid-row: span 1;
+    }
+    .main .h-stretch {
+      grid-column: span 1;
+    }
+    .main .big-stretch {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+  }

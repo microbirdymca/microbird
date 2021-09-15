@@ -2,11 +2,22 @@ import React from 'react'
 import styles from './Member.module.css'
 import { FaInstagram , FaFacebook  } from "react-icons/fa";
 import { SiLinkedin } from "react-icons/si";
+import Image from 'next/image'
 
 const JSecCard = ({photo , name , tagline, year , linkedin , facebook , insta}) => {
     let id = String(photo);
     id = id.split("=")[1];
-
+    let YEAR = new Date().getFullYear();
+    function batch(year){
+        YEAR = parseInt(YEAR, 10);
+        let ans = +YEAR-Number(year.substring(0,1))+1;
+        // console.log(year+1)
+        return (
+            <>
+                {ans}-{ans+4}
+            </>
+        )
+    }
     return (
         <>
            
@@ -16,7 +27,7 @@ const JSecCard = ({photo , name , tagline, year , linkedin , facebook , insta}) 
             <div className={styles.card}>
                 
                 <div className={styles.card_image}>
-                <img src={`https://drive.google.com/uc?export=view&id=${id}`} alt="images" />
+                    <Image src={`https://drive.google.com/uc?export=view&id=${id}`} alt="images" layout="fill" />
                 </div>
 
             <ul className={styles.social_icons}>
@@ -48,7 +59,7 @@ const JSecCard = ({photo , name , tagline, year , linkedin , facebook , insta}) 
             </ul>
 
             <div className={styles.details}>
-                <h2>{name} | {year} yr
+                <h2>{name} | {batch(year)}
                 {/* <br /> */}
                 <span className={styles.job_title}>{tagline}</span>
                 </h2>

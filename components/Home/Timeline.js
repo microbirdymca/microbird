@@ -57,32 +57,29 @@ function Timeline() {
           <div>
             <TimelineCard year={2010} text={"MICROBIRD was established as a technical society of YMCA."} />
           </div>
+          
           <div> 
-            <TimelineCard year={2012} text={"Organised embedded system and mobile robotics workshop for the first time."} />
+            <TimelineCard year={2012} text={"We organised embedded system and mobile robotics workshop for the first time in University ."} />
+          </div>
+
+          <div>
+            <TimelineCard year={2014} text={"Two teams from the club got selected in E-Yantra which later bacame a trend for the University ."} />
           </div>
           <div>
-            <TimelineCard year={2013} text={"Started Ecotronics- a green electronics event aiming to promote the use of advanced technologies to help our environment."} />
+            <TimelineCard year={2015} text={"We organised an event with IIT Kanpur as a zonal center. Started ESCALADE with IIT Guwahati ."} />
           </div>
           <div>
-            <TimelineCard year={2014} text={"To teams got selected in e-yantra which later bacame a trend for the University.Also, actively contributed in the Science Conclave. "} />
+            <TimelineCard year={2016} text={"We presented something on the main stage for the first time. Iridescent aka the Light show ."} />
+          </div>
+          
+          <div>
+            <TimelineCard year={2018} text={"We presented  trone dance on stage in which everything was made from scratch and we used our own technology, which was cost effective too."}/>
           </div>
           <div>
-            <TimelineCard year={2015} text={"Organised an event with IIT Kanpur as a zonal center.Started ESCALADE with IIT Guwahati."} />
+            <TimelineCard year={2019} text={"We stared MICROWORLD which is our own arena of some attractive events ."}/>
           </div>
           <div>
-            <TimelineCard year={2016} text={"The first time we presented something on the main stage.Iridescent aka the Light show"} />
-          </div>
-          <div>
-            <TimelineCard year={2017} text={"started presenting fun interactive events and gaming competition too."}/>
-          </div>
-          <div>
-            <TimelineCard year={2018} text={"Presented  trone dance on stage in which everything was made from scratch and we used our own Technology which was cost effective too."}/>
-          </div>
-          <div>
-            <TimelineCard year={2019} text={"We stared MICROWORLD which is our own arena of some attractive events."}/>
-          </div>
-          <div>
-            <TimelineCard year={2020} text={"We expanded our horizons and made our events public, accessable to all students accross the country."}/>
+            <TimelineCard year={2020} text={"We expanded our horizons and made our events public, accessable to all students accross the country ."}/>
           </div>
           
           

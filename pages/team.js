@@ -1,4 +1,4 @@
-import React , {useState , useEffect} from 'react'
+import React , {useState , useEffect , useRef} from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Hero from '../components/common/Hero'
 import Layout from '../components/layout'
@@ -40,13 +40,14 @@ const Team = (props) => {
 
     return (
         <Layout title="Team" >
+            
         <div className={styles.team}>
         <div className={styles.hero}>
-            <Hero blur={0} title="Our Team" img="/images/team/team-hero.jpeg" desc = "The unit that provides the strength to make it what it is."/>
+            <Hero blur={3} title="Our Team" img="/images/team/team-hero.jpeg" desc = "The unit that provides the strength to make it what it is."/>
            
         </div>
         <div className={styles.container}>
-            <h1 className="text-center display-4 py-2 mb-4" style={{fontWeight:"700"}}>Secretories</h1>
+            <h1 className="text-center display-4 py-2 mb-4" style={{fontWeight:"700"}}>Secretaries</h1>
             <Row className="d-flex justify-content-center px-4" >
                 {sec.length !=0 && sec.map((data,idx) => {
                     return <Col key={idx} className={styles.secCardCol} md={3}>
@@ -54,23 +55,14 @@ const Team = (props) => {
                             </Col> 
                 })}
                                         
-                {/* <Col className={styles.secCardCol} md={3}>
-                    <SecCard />
-                </Col>                         
-                <Col className={styles.secCardCol} md={3}>
-                    <SecCard />
-                </Col>                         
-                <Col className={styles.secCardCol} md={3}>
-                    <SecCard />
-                </Col>                          */}
+                                    
             </Row>
         </div>
         <section className={styles.jsec}> 
-        <div className="row text-center justify-content-center mb-5 hidden">
-        <div className="col-8">
-            <h1>JSec</h1>
-            <p className="lead">The unit that provides the strength to make it what it is.</p>
-        </div>
+        <div className="row text-center justify-content-center hidden mb-4">
+        {/* <div className="col-8"> */}
+        <h1 className="text-center display-4 py-2" style={{fontWeight:"700"}}>Joint Secretaries</h1>
+        {/* </div> */}
         </div>
             <div className={styles.container}>
             
@@ -88,51 +80,32 @@ const Team = (props) => {
             </div>
         </section>
         <section className="fdb-block team-1 " style={{padding: "2em 0px"}}>
-  <div className="container-fluid">
-    <div className="row text-center justify-content-center mb-5 pb-4">
-      <div className="col-8">
-        <h1>Our Team</h1>
-        <p className="lead">Members</p>
-      </div>
-    </div>
 
-    <div className="row-50"></div>
-
-    {/* <div className="row" style={{minHeight:'70vh'}}> */}
-      {/* <div className="col-md-4 col-sm-6 text-center">
-        <div className="fdb-box p-0">
-          <img alt="image" style={{width : "90%" ,maxHeight: "400px", objectFit:"cover", margin:"0 auto"}} className="img-fluid rounded-0 text-center" src="https://images.unsplash.com/photo-1546567850-8a49d669d37a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80" />
-
-          <div className="content p-3">
-            <h3><strong>Sara Doe</strong></h3>
-            <p>Founder</p>
-          </div>
-        </div>
-      </div> */}
-        {/* <Member /> */}
-    
-
-    {/* </div> */}
-
-            <Container fluid >
-            
-                <Row className="d-flex justify-content-between list">
-                    {/* <ListTeam member={member} /> */}
-                {
-                member.length !=0 && member.map((data,idx) => {
-                               return <Col key={idx} className={styles.secCardCol} md={3}>
-                                    <Member name={data.name} tagline={data.tagline} linkedin={data.linkedin} insta={data.insta} facebook={data.facebook} photo={data.photo} year={data.year} />
-                                </Col> 
-                            
-                })
-                }
-                                            
-                                            
-                        
+    <Container fluid>
+        <Row>
+            <Col xs={12}>
+                <h1 className="text-center display-4 py-2" style={{fontWeight:"700"}}>Our Team</h1>
+                <p className="leadv mb-4 text-center" style={{fontSize:"1.5rem"}}>Members</p>
+            </Col>
+            <Col xs={12}>
+                <Container fluid >
+                
+                    <Row>
+                        {/* <ListTeam member={member} /> */}
+                    {
+                    member.length !=0 && member.map((data,idx) => {
+                                return <Col key={idx} md={2} sm={6} className={styles.memCardCol}>
+                                            <Member name={data.name} tagline={data.tagline} linkedin={data.linkedin} insta={data.insta} facebook={data.facebook} photo={data.photo} year={data.year} />
+                                        </Col> 
                                 
-                </Row>
-            </Container>
-  </div>
+                    })
+                    }
+                    </Row>
+                </Container>
+            </Col>
+        </Row>
+    </Container>
+
 </section>
         </div>
         </Layout>
