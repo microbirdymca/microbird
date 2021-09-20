@@ -17,7 +17,7 @@ function Professor() {
                 </p>
             </div>
           </div>
-              <div className={styles.horizontal}>
+              <div className={`${styles.horizontal} ${styles.paulami}`}>
                 <img src="images/home/paulami.jpeg" />
                 <div className={styles.teacher}>
                   <h3>Poulami Jana</h3>
@@ -26,15 +26,15 @@ function Professor() {
                 </div>
               </div>
         {/* </Col> */}
-          <div className={styles.horizontal}>
-            {/* <img src="images/home/paulami.jpeg" /> */}
+          <div className={`${styles.horizontal} ${styles.anuradha}`}>
+            <img src="images/home/anuradha.jpeg" />
             <div className={styles.teacher}>
               <h3>Dr. Anuradha Pillai</h3>
-              <h5>Depty Dean Student welfare</h5>
+              <h5>Deputy Dean Student welfare</h5>
               
             </div>
           </div>
-              <div className={styles.horizontal}>
+              <div className={`${styles.horizontal} ${styles.lakhwinder}`}>
                 <img src="images/home/lakhwinder.jpeg" />
                 <div className={styles.teacher}>
                   <h3>Prof. Lakhwinder Singh</h3>
@@ -42,7 +42,7 @@ function Professor() {
                   
                 </div>
               </div>
-              <div className={`${styles.horizontal} mt-0`}>
+              <div className={`${styles.horizontal} ${styles.mukesh} mt-0`}>
                 <img src="images/home/mukeshkumar.jpeg" />
                 <div className={styles.teacher}>
                   <h3>Mukesh Kumar</h3>

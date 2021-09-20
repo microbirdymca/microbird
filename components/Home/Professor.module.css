@@ -129,4 +129,15 @@
     margin-bottom: 30px;
   }
 
+  .lakhwinder{
+    grid-row: 3/4;
+  }
+  .anuradha{
+    grid-row: 4/5;
+
+  }
+  .mukesh{
+    grid-row: 5/6;
+  }
+
 } 
