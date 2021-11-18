@@ -3,7 +3,7 @@ import React , {useState} from 'react'
 import styles from './Upcoming.module.css'
 import ModalBody from './ModalBody'
 
-const Upcoming = ({data : {name , poster , description , date , link}}) => {
+const Upcoming = ({data : {name , poster , description , date , link , details}}) => {
     let reg = new RegExp('(?<=https://drive.google.com/file/d/)(.*)(?=/view)','g')
     let id = String(poster);
     id = id.match(reg);
@@ -33,7 +33,7 @@ const Upcoming = ({data : {name , poster , description , date , link}}) => {
             <Modal.Title className={styles.modalHeading}>{name}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <ModalBody upcoming={true} date={date} link={link} id={id} description={description}/>
+                <ModalBody upcoming={true} date={date} link={link} id={id} description={description} details={details}/>
             </Modal.Body>
             <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>

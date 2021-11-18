@@ -2,7 +2,7 @@ import React from 'react'
 import { Row,Col,Container, Button } from 'react-bootstrap';
 import styles from './ModalBody.module.css'
 
-const ModalBody = ({ description , date , id , youtube , upcoming , link}) => {
+const ModalBody = ({ description , date , id , youtube , upcoming , link , details}) => {
     console.log(youtube)
     let youtubeID;
     if(youtube){
@@ -23,7 +23,7 @@ const ModalBody = ({ description , date , id , youtube , upcoming , link}) => {
                             </Col>
                             <Col className={styles.modalComponent} md={6} sm={12}>
                             <p className={styles.description}>
-                            {description}
+                            {upcoming ? details : description}
                                 </p>
                                 {youtube &&
                                     <iframe width="100%" height="315"
