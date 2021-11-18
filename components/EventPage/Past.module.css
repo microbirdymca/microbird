@@ -60,6 +60,19 @@
   font-size: 1.9rem;
   color: #03396c;
 }
+.modal{
+  padding-left: 0 !important;
+  z-index: 100000;
+
+}
+
+.dialogClass {
+  max-width:60%;
+} 
+
+.contentClass{
+  width: 100% !important;
+}
 /* 
 .modal {
   width: 100%;
@@ -74,13 +87,6 @@
   max-width: 95vw;
 }
 */
-.modal{
-  padding-left: 0 !important;
-}
-
-.dialogClass {
-  max-width: 60%;
-} 
 
 @media only screen and (max-width: 800px) {
   .dialogClass {

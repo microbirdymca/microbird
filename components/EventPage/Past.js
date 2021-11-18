@@ -4,8 +4,8 @@ import styles from './Past.module.css'
 import ModalBody from './ModalBody'
 
 const Past = (data) => {
-    const [show, setShow] = useState(false);
     const {name , description , short , youtube, date , poster} = data.data;
+    const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     let reg = new RegExp('(?<=https://drive.google.com/file/d/)(.*)(?=/view)','g')

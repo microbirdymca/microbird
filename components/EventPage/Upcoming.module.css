@@ -76,6 +76,25 @@
   background-color: #03305a;
 }
 
+/* MODAL */
+.modalHeading {
+  font-weight: 700;
+  font-size: 1.9rem;
+  color: #03396c;
+  width: 100%;
+  text-align: center !important;
+ }
+ .modal{
+   padding-left: 0 !important;
+   z-index: 100000;
+ }
+ .dialogClass {
+   max-width: 55%;
+ }  
+ .contentClass{
+   width: 100% !important;
+ }
+
 @media only screen and (max-width: 600px) {
   .upcoming {
     display: flex;
@@ -96,4 +115,10 @@
   .btns {
     margin-top: 15px;
   }
+  .dialogClass {
+    max-width: 100%;
+  }
 }
+
+
+

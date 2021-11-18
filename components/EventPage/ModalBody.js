@@ -1,8 +1,8 @@
 import React from 'react'
-import { Row,Col,Container } from 'react-bootstrap';
+import { Row,Col,Container, Button } from 'react-bootstrap';
 import styles from './ModalBody.module.css'
 
-const ModalBody = ({ description , date , id , youtube}) => {
+const ModalBody = ({ description , date , id , youtube , upcoming , link}) => {
     console.log(youtube)
     let youtubeID;
     if(youtube){
@@ -15,20 +15,25 @@ const ModalBody = ({ description , date , id , youtube}) => {
                         
                         <Row className="d-flex justify-content-between">
                             <Col className={styles.modalComponent} md={6} sm={12}>
+                                <div className={styles.left}>
                                 <img  src={`https://drive.google.com/uc?export=view&id=${id}`} className={styles.image} />
-                                <div className={styles.caption}>
-                                    <h3 className="text-center">Scheduled On: {date}</h3>
+                                    <h3>Scheduled On: {date}</h3>
                                     
                                 </div>
                             </Col>
                             <Col className={styles.modalComponent} md={6} sm={12}>
-                            <p>
+                            <p className={styles.description}>
                             {description}
                                 </p>
-                                {youtube &&  
+                                {youtube &&
                                     <iframe width="100%" height="315"
                                     src={`https://www.youtube.com/embed/${youtubeID}`}>
                                     </iframe>
+                                }{
+                                    upcoming&&
+                                    <a href={`${link}`} target="_Blank" className={styles.registerBtn}>
+                                        <Button className={styles.btn} >Register</Button>
+                                    </a>
                                 }   
                             </Col>
                             
