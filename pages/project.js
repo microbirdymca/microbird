@@ -14,7 +14,7 @@ const project = (props) => {
         if(props.data && data.length == 0){
             props.data.sort((a,b) => Number(b.date.substring(b.date.length-4)) - Number(a.date.substring(a.date.length-4)) )
             setData(props.data);
-            // console.log(data);
+            console.log(props.data);
         }
     } , [props])
     
@@ -60,6 +60,7 @@ export async function getStaticProps(context) {
         notFound: true,
         }
     }
+
 
     return {
         props: { 

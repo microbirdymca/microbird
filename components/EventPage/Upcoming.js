@@ -2,6 +2,8 @@ import { Button , Modal } from 'react-bootstrap'
 import React , {useState} from 'react'
 import styles from './Upcoming.module.css'
 import ModalBody from './ModalBody'
+import MarkdownView from 'react-showdown';
+
 
 const Upcoming = ({data : {name , poster , description , date , link , details}}) => {
     let reg = new RegExp('(?<=https://drive.google.com/file/d/)(.*)(?=/view)','g')
@@ -17,7 +19,10 @@ const Upcoming = ({data : {name , poster , description , date , link , details}}
             <img src={`https://drive.google.com/uc?export=view&id=${id}`} />
             <div className={styles.content}>
                 <h2>{name}</h2>
-                <p>{description}</p>
+                <p> <MarkdownView
+                    markdown={description}
+                    options={{ tables: true, emoji: true }}
+                    /></p>
                 <div className={styles.organize}>Coming On: {date}</div>
                 <div className={styles.btns}>
                     <a href={`${link}`} target="_Blank">

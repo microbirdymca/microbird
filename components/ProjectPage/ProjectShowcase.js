@@ -5,6 +5,7 @@ import { SiLinkedin } from "react-icons/si";
 import { TiLocation } from "react-icons/ti";
 import { AiFillCalendar ,AiOutlineStar } from "react-icons/ai";
 import Image from 'next/image'
+import MarkdownView from 'react-showdown';
 
 const ProjectShowcase = ({dir, data}) => {
     let {poster} = data;
@@ -40,7 +41,12 @@ const ProjectShowcase = ({dir, data}) => {
                 <AiOutlineStar style={{marginRight:'10px' , fontSize:'20px'}} />{data.star}
                 </p>
                 <p className={`${styles.paragraph} text-justify `}>
-                    {data.description}
+                    {/* {data.description}
+                     */}
+                        <MarkdownView
+                            markdown={data.description}
+                            options={{ tables: true, emoji: true }}
+                        />
                 </p>
             </div>
             <div className={styles.account}>

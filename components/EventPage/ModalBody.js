@@ -1,6 +1,8 @@
 import React from 'react'
 import { Row,Col,Container, Button } from 'react-bootstrap';
 import styles from './ModalBody.module.css'
+import MarkdownView from 'react-showdown';
+
 
 const ModalBody = ({ description , date , id , youtube , upcoming , link , details}) => {
     console.log(youtube)
@@ -9,6 +11,13 @@ const ModalBody = ({ description , date , id , youtube , upcoming , link , detai
     youtube = String(youtube);
     youtube = youtube.split("/");
     youtubeID = youtube[youtube.length-1];}
+
+    const Description = (description) => {
+        return  <MarkdownView
+                    markdown={description}
+                    options={{ tables: true, emoji: true }}
+                />
+    }
     return (
         <>
             <Container className={styles.upcomingContainer}>
@@ -23,7 +32,7 @@ const ModalBody = ({ description , date , id , youtube , upcoming , link , detai
                             </Col>
                             <Col className={styles.modalComponent} md={6} sm={12}>
                             <p className={styles.description}>
-                            {upcoming ? details : description}
+                            {upcoming ? Description(details) : Description(description)}
                                 </p>
                                 {youtube &&
                                     <iframe width="100%" height="315"

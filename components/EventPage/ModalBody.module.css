@@ -79,11 +79,22 @@
 .description{
   overflow-y: scroll;
   max-height: 420px;
+  padding-left: 20px;
+}
+
+.registerBtn{
+
+  padding-left: 20px;
 }
 
 @media only screen and (max-width: 600px) {
   .registerBtn{
     display: block;
     text-align: center;
+    padding-left: 0px;
+  }
+  .description{
+
+    padding-left: 0px;
   }
 }
