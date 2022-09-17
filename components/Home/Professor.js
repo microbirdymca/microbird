@@ -8,7 +8,7 @@ function Professor() {
     <div className={styles.professor}>
               {/* </Col> */}
           <div className={styles.firstCol}>
-            <img src="images/home/sktomar.jpg" />
+            <img src="images/home/sktomar.png" />
             <div className={styles.sktomar}>
               <h3>Prof. S.K. Tomar</h3>
               <h5>Vice Chancellor, JCBUST</h5>
