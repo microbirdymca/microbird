@@ -8,13 +8,14 @@ function Professor() {
     <div className={styles.professor}>
               {/* </Col> */}
           <div className={styles.firstCol}>
-            <img src="images/home/dineshkumar.jpg" />
-            <div className={styles.dinesh}>
-              <h3>Proff. Dinesh Kumar</h3>
+            <img src="images/home/sktomar.jpg" />
+            <div className={styles.sktomar}>
+              <h3>Prof. S.K. Tomar</h3>
               <h5>Vice Chancellor, JCBUST</h5>
               <p>
-                The recipient of prestigious Homi J. Bhabha Memorial Award of Indian Science Congress, Prof. Dinesh Kumar is the fifth Vice Chancellor of J.C. Bose University of Science and Technology, YMCA, Faridabad. An able administrator and ardent researcher, our VC sir has always taught us to aim for the stars and has always backed up in all the works we do.
-                </p>
+                Prof. Sushil Kumar Tomar is a distinguished academician, researcher and educational administrator. Prof. Tomar, who is also a well known Mathematician, assumed the office of Vice-Chancellor on February 22, 2022 as the seventh Vice-Chancellor of the University.
+                The career of Prof. Tomar as an academician and researcher spans over 34 years. He brings with him a rich mixture of professional expertise and administrative experience.
+              </p>
             </div>
           </div>
               <div className={`${styles.horizontal} ${styles.paulami}`}>

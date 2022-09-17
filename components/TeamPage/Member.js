@@ -10,8 +10,8 @@ const JSecCard = ({photo , name , tagline, year , linkedin , facebook , insta}) 
     let YEAR = new Date().getFullYear();
     function batch(year){
         YEAR = parseInt(YEAR, 10);
-        let ans = +YEAR-Number(year.substring(0,1))+1;
-        // console.log(year+1)
+        let ans = +YEAR-Number(year.substring(0,1));
+        
         return (
             <>
                 {ans}-{ans+4}

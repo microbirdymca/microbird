@@ -43,7 +43,7 @@ const Team = (props) => {
             
         <div className={styles.team}>
         <div className={styles.hero}>
-            <Hero blur={3} title="Our Team" img="/images/team/team-hero.jpeg" desc = "The unit that provides the strength to make it what it is."/>
+            <Hero blur={3} title="Our Team" img="/images/team/team-hero.jpg" desc = "The unit that provides the strength to make it what it is."/>
            
         </div>
         <div className={styles.container}>
